@@ -11,14 +11,12 @@ using SoG.Modding.Content;
 
 namespace ElderMode
 {
-    [ModDependency("GrindScript", "0.14")]
+    [ModDependency("GrindScript", "0.16")]
     public class ElderModeMod : Mod
     {
-        public override Version ModVersion => new Version("0.14");
+        public override Version ModVersion => new Version("0.16");
 
         public override string NameID => "ElderModeMod";
-
-        public override bool AllowDiscoveryByMods => false;
 
         private Dictionary<EnemyCodex.EnemyTypes, EnemyCodex.EnemyTypes> _enemiesWithSwaps;
 
